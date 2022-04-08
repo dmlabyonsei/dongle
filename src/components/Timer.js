@@ -21,6 +21,7 @@ function Timer({ start }) {
 
   return (
     <>
+      {/* {fin && <Redirect to="/" />} */}
       {fin && <Redirect to="/learn3" />}
       <div
         style={{
