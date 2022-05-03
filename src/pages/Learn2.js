@@ -18,10 +18,10 @@ import guideImg from "../asset/img/learn2Guide.png";
 const VideoStyle = styled.div`
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-direction: column;
 `;
 
@@ -54,8 +54,8 @@ function Learn2(props) {
       <BodyBackground color="black" />
       <Navbar color="transparent" />
       <VideoStyle>
-        <YoutubeEmbed embedId="h0Ls3unm-nA" setEnded={setEnded} />
-        {/* <img src={guideImg} width="90%" alt="img" /> */}
+        {/* <YoutubeEmbed embedId="h0Ls3unm-nA" setEnded={setEnded} /> */}
+        <img src={guideImg} width="90%" alt="img" />
       </VideoStyle>
 
       <BottomBox>

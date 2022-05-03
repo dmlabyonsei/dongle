@@ -9,12 +9,8 @@ import Button from "../components/Button";
 import BodyBackground from "../components/BodyBackground";
 import BottomBox from "../components/BottomBox";
 import Navbar from "../components/Navbar";
-import { useDispatch } from "react-redux";
-import { changeTestType } from "../store/testType";
 
 function Home(props) {
-  const dispatch = useDispatch();
-
   const global = {
     textAlign: "center",
     color: "white",
@@ -39,11 +35,6 @@ function Home(props) {
     <div style={global}>
       <BodyBackground image={background} />
       <Navbar color="transparent" home />
-      <div style={{ position: "absolute", top: "50%" }}>
-        <button onClick={() => dispatch(changeTestType(1))}>1</button>
-        <button onClick={() => dispatch(changeTestType(2))}>2</button>
-        <button onClick={() => dispatch(changeTestType(3))}>3</button>
-      </div>
       <BottomBox>
         <div style={subtitle}>Artificial Intelligence DONGLE</div>
         <div style={title}>
